@@ -1,6 +1,7 @@
 :root {
     --black: #212529;
     --yellow: #F5DF4E;
+    --white: #F8F9FA;
     --light-green:  #7EFDC0;
     --alert-ok: #06be65;
     --alert-error: #cc1717;
@@ -17,7 +18,7 @@ html {
 }
 
 * {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     font-family: Helvetica, sans-serif;
     scrollbar-width: thin;
     scrollbar-color: #FFCD37 #DFE9EB;
@@ -31,7 +32,7 @@ html {
 
 *::-webkit-scrollbar-track {
     border-radius: 0.6rem;
-    background-color: #DFE9EB;
+    background-color: #F8F9FA;
 }
   
 *::-webkit-scrollbar-track:hover {
@@ -80,12 +81,11 @@ li {
 }
 
 .bg-titulo {
-    background-color: #F5DF4E;
-    border-radius: 0.5rem;
+    background-color: var(--yellow);
 }
 
 .bg-white-titulo {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .full-window {
@@ -102,7 +102,7 @@ li {
 
 /*Button*/
 .my-btn {
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 1.4rem;
     text-decoration: none;
     box-shadow: 0.1rem 0.4rem 0.8rem #575757;
@@ -119,13 +119,13 @@ li {
     box-shadow: 0.1rem 0.4rem 0.8rem #575757;
     padding: 1.4rem 2.5rem;
     border-radius: 0.8rem;
-    border: 0.1rem solid #FFFFFF;
-    background: #FFFFFF;
+    border: 0.1rem solid var(--white);
+    background: var(--white);
 }
 
 .my-btn:hover {
     color: var(--black);
-    background: #FFFFFF;
+    background: var(--white);
     border: 0.1rem solid var(--black);
 }
 
@@ -154,7 +154,7 @@ li {
     display: flex;
     align-items: center;
     font-size: 2.4rem;
-    color: #e3e2e2;
+    color: var(--white);
 }
 
 #navbar .links {
@@ -177,7 +177,7 @@ li {
     padding: 0.2rem;
     margin: 0.8rem;
     font-size: 1.6rem;
-    color: #e3e2e2;
+    color: var(--white);
     text-decoration: none;
     position: relative;
 }
@@ -221,7 +221,7 @@ li {
 #navbar .icon-burger .line {
     width: 3rem;
     height: 0.5rem;
-    background-color: #e3e2e2;
+    background-color: var(--white);
     margin: 0.5rem;
     border-radius: 0.3rem;
     transition: all 0.5s ease-in-out;
@@ -246,7 +246,7 @@ li {
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: rgba(29, 29, 29, 0.8);
+        background-color: #1d1d1dcc;
         overflow: hidden;
         transition: all 0.5s ease-in-out;
     }
@@ -277,8 +277,7 @@ li {
 
     #navbar :checked ~ .icon-burger .line:nth-child(2) {
         opacity: 0;
-    }
-    
+    }   
 }
 
 /*Navbar do content*/
@@ -303,8 +302,6 @@ li {
     position: relative;
 }
 
-
-
 #navContent .dinLinks a::before {
     content: "";
     position: absolute;
@@ -326,15 +323,22 @@ li {
 
 /*Accordion conteudo*/
 .accordion-body {
-    background-color: #b89f01;
+    background-color: var(--yellow);
 }
 
 .accordion-button {
     background-color: #b89f01;
 }
 
-accordion-collapse {
-    background-color: #b89f01;
+.accordion-collapse {
+    background-color: var(--yellow);
+}
+
+#origem {
+    border: 0.1rem solid;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    padding: 1rem;
 }
 
 /*Formulário pop-up*/
@@ -346,11 +350,11 @@ accordion-collapse {
     resize: none;
     border: 0;
     transition: all 0.3s;
-    border-bottom:0.2rem solid #d2cdbe
+    border-bottom:0.2rem solid var(--white);
 }
 
 #pop-form input:focus, select:focus {
-    border-bottom:0.2rem solid #ffe604;
+    border-bottom:0.2rem solid var(--yellow);
 }
 
 #pop-form label:before {
@@ -368,12 +372,13 @@ accordion-collapse {
     position: relative;
     background-color: #ffe71000;
     color: var(--white);
-    border: solid 0.1rem #fded03;
+    border: solid 0.1rem var(--yellow);
 }
 
 .form-control label {
     display: inline-block;
     margin-bottom: 0.5rem;
+    color: var(--black);
 }
 
 .form-control input {
@@ -391,7 +396,7 @@ accordion-collapse {
     border-radius: 1rem;
     font-size: 1.4rem;
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .form-control i {
@@ -411,10 +416,10 @@ accordion-collapse {
 }
 
 .form button {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     width: 100%;
     border-radius: 1rem;
-    margin: 2rem 0;
+    margin-bottom: 2.5rem;
 }
 
 .form-control.success input {
@@ -459,6 +464,6 @@ accordion-collapse {
 }
 
 .shape-leitor {
-    background: rgba(255, 255, 255, 0) url(../image/blob.svg) no-repeat center;
+    background: url(../image/blob.svg) no-repeat center;
 }
   
