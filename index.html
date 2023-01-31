@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="author" content="Otávio Lourenço">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/effects.css">
+    <link rel="stylesheet" href="CSS/magnific-popup.css">
+    <link rel="stylesheet" href="CSS/simple-lightbox.min.css">
+    <link rel="stylesheet" href="CSS/lc_lightbox.css">
+    <link rel="stylesheet" href="CSS/dark.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/c6aa19193c.js" crossorigin="anonymous"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNCOLadpkSUUpmJLe0TSB0jc9s69vSw6E&callback=carregarMapa"></script>
+
+    <title>Meu Portifólio</title>
+</head>
+<body onload="leitor(); carregarMapa()">
+  <!--Inicio nav-->
+    <nav id="navbar">
+      <input type="checkbox" id="nav-toggle">
+      <div class="logo">MartinDoe</div>
+      <ul class="links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portifolio">Portifólio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </label>
+    </nav>
+    
+    <!--header-->
+    <div class="container-fluid d-flex align-items-center full-window">
+        <div class="container p-5">
+            <div class="col d-flex justify-content-center align-items-center">
+                <img src="image/man6.jpg" alt="imagem header" class="img-fluid" id="img-header">
+            </div>
+            <div class="col text-center p-5 flex-column">
+                <h1 style="font-weight: bolder;">Hello world! <br>Eu sou o <span style="font-family: glitch, sans-serif; font-size: 5rem;">Martin Doe</span></h1>
+                <h2 class="pb-5">Web Designer, graphic designer & UI/UX designer</h2>
+
+                <div>
+                  <a href="#portifolio" type="button" class="my-white-btn mx-5 mb-5">Portifólio</a>
+
+                  <a href="#pop-form" type="button" class="popup-with-form my-btn btn-animation btn-animated">Pedir orçamento</a>
+                </div>
+
+            </div>
+            <div class="col mt-3">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+                <a href="#sobre"><lottie-player src="https://lottie.host/16a0d5e2-7e83-4d53-9115-23f8932c657f/0twJufeMap.json" background="transparent" speed="1" style="height: 5rem;" loop autoplay></lottie-player></a>
+            </div>
+        </div>
+    </div>
+    <!--background-->
+    <ul class="background">
+        <li></li> <li></li> <li></li>
+        <li></li> <li></li> <li></li>
+        <li></li> <li></li> <li></li>
+        <li></li> <li></li> <li></li>
+        <li></li> <li></li> <li></li>
+        <li></li> <li></li> <li></li>
+     </ul>
+
+    <!--Sobre-->
+    <div class="container-fluid bg-light full-window">
+        <div id="sobre" class="py-5"></div>
+        <div class="container">
+          <div class="row text-center reveal">
+              <div class="col-md  mt-5">
+                  <p class="text-center"><span class="bg-titulo px-2">Conheça um pouco</span></p>
+                  <h2 class="titulo-h2">Mais sobre mim</h2>
+                  <nav id="navContent">
+                    <ul class="dinLinks">
+                      <li><a href="#sobre-mim">Quem sou</a></li>
+                      <li><a href="#curriculo">Currículo</a></li>
+                      <li><a href="#habilidade">Habilidades</a></li>
+                    </ul>
+                  </nav>
+              </div>
+          </div>
+          
+          <div id="dinContent">
+            <div class="row reveal">
+                <div class="col-md-7 p-5">
+                    <h2 class="title-h2 mb-5">Hey, me chamo Martin Doe,</h2>
+                    <p>um designer multidisciplinar especializado em web design, design gráfico e design de interface/experiência do usuário. Eu sou capaz de transformar suas ideias em projetos incríveis e atraentes. Possuo experiência em diversas tecnologias e plataformas, incluindo HTML, CSS, JavaScript, PHP e WordPress. Me especializei em criar websites personalizados e responsivos que oferecem uma excelente experiência ao usuário. Além disso, também ofereço serviços de SEO e manutenção para garantir que seu site esteja sempre funcionando corretamente. Se você está procurando por um desenvolvedor web confiável e experiente, entre em contacto e saiba mais sobre como <strong>posso ajudar a elevar sua presença online.</strong>"</p>
+                    <a  href="#contacto"><button class="my-btn">Entrar em contacto</button></a>
+                </div>
+                <div class="col-md-5 reveal d-flex align-items-center">
+                  <div class="pb-5 d-flex justify-content-center position-relative">
+                    <div class="border-pic">
+                      <img src="image/man.png" class="img-fluid" alt="Foto do Martin Doe">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--CTA-->
+    <div class="container-fluid flex-column p-5 ">
+        <div class="row reveal d-flex justify-content-center">
+            <div class="col-md-9 text-center px-5">
+                <h2 class="title-h2">Vamos desenvolver junto!</h2>
+                <p>Solicite um orçamento e dê o primeiro passo para ter um site profissional e moderno! Não perca mais tempo, solicite já o seu projeto e tenha a certeza de que está investindo em sua presença digital.</p>
+                <a class="popup-with-form" href="#pop-form"><button class="my-btn btn-animation btn-animated mt-4">Solicite já</button></a>
+            </div>
+        </div>
+    </div>
+    <!--Feed RSS-->
+    <div class="container-fluid bg-light full-window p-5 reveal">
+        <div class="row reveal">
+            <div class="col-md text-center mt-5">
+                <p class="text-center"><span class="bg-titulo px-3">Notícias</span></p>
+                <h2 class="titulo-h2" style="padding-bottom: 4rem;">Mantenha-se atualizado</h2>
+            </div>
+        </div>
+        <div class="row reveal">
+            <div class="col-sm-6">
+                <div class="p-5 border-top border-start border-3" id="rss" style="height: 70vh; overflow: scroll;"></div>
+            </div>
+            <div class="col-sm-6 text-center d-flex align-items-center shape-leitor">
+                <div class="p-5 reveal">
+                    <h2>Sempre informado!</h2>
+                    <p>Fique por dentro das últimas tendências e novidades do mundo da tecnologia. Acompanhe as principais notícias, análises e opiniões em nosso site e fique sempre atualizado sobre o que está acontecendo no mundo digital.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Portifolio-->
+    <div class="container-fluid full-window">
+        <div id="portifolio" class="py-5"></div>
+      <div class="row reveal">
+        <div class="col-md text-center mt-5">
+          <p class="text-center"><span class="bg-white-titulo px-3">Portifólio</span></p>
+          <h2 class="titulo-h2" style="padding-bottom: 4rem;">Alguns projectos</h2>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center reveal">
+        <div class="col-md-10 text-center">
+          <nav id="nav-galeria" class="pb-4">
+            <button type="button" id="todas" class="my-btn m-2">Todas</button>
+            <button type="button" id="landing" class="my-btn m-2">Landing Page</button>
+            <button type="button" id="porti" class="my-btn m-2">Portifólio</button>
+            <button type="button" id="commerce" class="my-btn m-2">E-commerce</button>
+          </nav>
+
+          <!--gallery del-->
+
+          <div class="popup-gallery d-flex flex-row flex-wrap justify-content-center">
+
+            <div class="landPg">
+              <a href="image/gallery/landing-page1.jpg">
+                <img src="image/gallery/landing-page1.jpg" class="p-3" alt="" height="450">
+              </a>
+            </div>
+
+            <div class="ecomm">
+              <a href="image/gallery/landing-page2.jpg">
+                <img src="image/gallery/landing-page2.jpg" class="p-3" alt="" height="450">
+              </a>
+            </div>
+
+            <div class="port">
+              <a href="image/gallery/landing-page3.jpg">
+                <img src="image/gallery/landing-page3.jpg" class="p-3" alt="" height="450">
+              </a>
+            </div>
+
+            <div class="ecomm">
+              <a href="image/gallery/landing-page4.jpg">
+                <img src="image/gallery/landing-page4.jpg" class="p-3" alt="" height="450">
+              </a>
+            </div>
+
+            <div class="port">
+              <a href="image/gallery/landing-page5.jpg">
+                <img src="image/gallery/landing-page5.jpg" class="p-3" alt="" height="450">
+              </a>
+            </div>
+
+            <div class="landPg">
+              <a href="image/gallery/landing-page6.jpg">
+                <img src="image/gallery/landing-page6.jpg" class="p-3" alt="" height="450">
+              </a>
+            </div>
+
+            <div class="ecomm">
+              <a href="image/gallery/landing-page7.jpg">
+                <img src="image/gallery/landing-page7.jpg" class="p-3" alt="" height="450">
+              </a>
+            </div>
+
+            <div class="landPg">
+              <a href="image/gallery/landing-page8.jpg">
+                <img src="image/gallery/landing-page8.jpg" class="p-3" alt="" height="450">
+              </a>
+            </div>
+
+            <div class="port">
+              <a href="image/gallery/landing-page9.jpg">
+                <img src="image/gallery/landing-page9.jpg" class="p-3" alt="" height="450">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Contacto-->
+    <div class="container-fluid full-window">
+        <div id="contacto" class="py-5"></div>
+        <div class="row reveal">
+            <div class="col-md-7 p-5 text-center">
+                <p><span class="bg-white-titulo px-3">FAQ</span></p>
+                <h2 class="titulo-h2 pb-5">Perguntas frequentes</h2>
+
+                <div class="accordion reveal" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button style="font-size: 2rem;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Qual é o prazo para o desenvolvimento do site?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>O prazo para o desenvolvimento do site será estabelecido em conjunto com o cliente, levando em consideração as necessidades e objetivos do projeto. O lançamento do site é um passo importante para o sucesso da empresa,  de forma ágil e eficiente para garantir que o site seja lançado dentro do prazo estabelecido. Além disso, mantemos o cliente informado sobre o progresso do projeto ao longo do tempo.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button style="font-size: 2rem;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Quais são as habilidades e experiência do desenvolvedor?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>Nossa equipe é composta por desenvolvedores altamente qualificados e experientes, com habilidades em diversas tecnologias web, incluindo HTML, CSS, JavaScript, PHP, frameworks e outras. Temos profissionais com anos de experiência no desenvolvimento de sites e aplicativos web, e estamos sempre atualizados com as últimas tendências e tecnologias.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button style="font-size: 2rem;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Onde estamos?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Digite o local: <input id="origem" type="text" value="">
+                          <input class="my-btn" type="button" value="Procurar" onclick="calcularRota()"><br>
+                          Ou use a sua <input class="my-btn mb-4" type="button" id="localizar" value="Localização atual"><br>
+                          <div id="mapa" style="position: relative; width: 100%; height: 30rem;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-5 p-5 reveal">
+                <p class="text-center"><span class="bg-white-titulo px-3">Mensagem</span></p>
+                <h2 class="titulo-h2 text-center pb-5">Entre em contacto</h2>
+
+                <form name="form-contact" id="form-contact" class="form reveal">
+                    <div class="form-control">
+                        <label for="nameimp">Nome</label> 
+                        <input type="text" id="nameimp" placeholder="Digite o seu nome">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+          
+                    <div class="form-control">
+                        <label for="email">Email</label> 
+                        <input type="text" id="email" placeholder="Digite o seu email">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+      
+                    <div class="form-control">
+                    <label for="msg">Mensagem</label> 
+                      <textarea name="msg" id="msg" cols="20" rows="5" placeholder="Digite a sua mensagem"></textarea>
+                        <div >
+                          <span id="counter">200</span><span>/200</span>
+                        </div>
+                     
+                          <i class="fa-solid fa-circle-exclamation"></i> 
+                          <i class="fa-solid fa-circle-check"></i> 
+                        <small>Mensagem de erro</small>
+                   
+                      </div>
+                      <button type="submit" class="my-btn p-3 bg-btn">Enviar</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Pop-up Form-->
+      <div class="d-flex justify-content-center">
+        <form method="post" onsubmit="enviarDados(event)" id="pop-form" class="mfp-hide white-popup-block pt-5" onchange="calcularValorFinal()">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required><br>
+        
+            <label for="apelido">Apelido:</label>
+            <input type="text" id="apelido" required><br>
+        
+            <label for="tel">Telemóvel:</label>
+            <input type="tel" id="tel" placeholder="999-999-999" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><br>
+            <label for="opcoes">Tipo de página web:</label>
+            <select name="opcoes" id="opcoes" onchange="calcularValorFinal()">
+                <option value="0">Selecione uma opção</option>
+                <option value="100">Landing page - €100</option>
+                <option value="150">Blog - €150</option>
+                <option value="200">Portal - €200</option>
+                <option value="300">Loja online - €300</option>
+            </select>
+            <label for="prazo">Prazo de entrega (em meses):</label>
+            <input type="number" name="prazo" id="prazo" min="1" style="width: 15rem;">
+        
+            <h3>Marque os separadores desejados</h3>
+            <input type="checkbox" id="sobre-inp" value="400">
+            <label for="sobre-inp">Quem somos |</label>
+        
+            <input type="checkbox" id="local-inp" value="400">
+            <label for="local-inp">Onde estamos</label> <br>
+        
+            <input type="checkbox" id="galeria-inp" value="400">
+            <label for="galeria-inp">Galeria de fotografias |</label>
+        
+            <input type="checkbox" id="ecom-inp" value="400">
+            <label for="ecom-inp">eCommerce</label><br>
+        
+            <input type="checkbox" id="gest-inp" value="100">
+            <label for="gest-inp">Gestão interna |</label>
+        
+            <input type="checkbox" name="noticias" id="noti-inp" value="400">
+            <label for="noti-inp">Notícias |</label>
+        
+            <input type="checkbox" id="social-inp" value="400">
+            <label for="social-inp">Redes sociais</label><br>
+        
+            <h2 style="font-weight: 600;">Orçamento estimado</h2>
+            <input type="text" name="valor" id="valor-total" placeholder="€0" disabled><br>
+
+            <p style="font-size: 1.4rem;">(É um valor meramente indicativo, pode sofrer alterações.)</p>
+        
+            <button class="my-btn text-center mt-3" type="submit">Enviar</button>
+        </form>
+      </div>
+
+    <!--footer-->
+    <div class="container-fluid d-flex align-items-center" style="background-color: var(--black); color: azure; height: 7rem;">
+        <div class="col-md-6">
+            <p>Copyright &copy; 2022. All Rights Reserved</p>
+        </div>
+        <div class="col-md-6 text-end px-4">
+          <p>Creado por Otávio Lourenço</p>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="JS/jquery.js"></script>
+    <script src="JS/jquery.magnific-popup.min.js"></script>
+    <script src="JS/dinamicPag.js"></script>
+    <script src="JS/formOrcamento.js"></script>
+    <script src="JS/effects.js"></script>
+    <script src="JS/formContact.js"></script>
+    <script src="JS/leitorRSS.js"></script>
+    <script src="JS/meuMapa.js"></script>
+    <script src="JS/simple-lightbox.min.js"></script>
+    <script src="JS/gallery.js"></script>
+    <script src="JS/lc_lightbox.lite.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
