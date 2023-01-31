@@ -1,7 +1,8 @@
 :root {
     --black: #212529;
+    --yellow: #F5DF4E;
     --light-green:  #7EFDC0;
-    --alert-ok: #3af89c;
+    --alert-ok: #06be65;
     --alert-error: #cc1717;
 }
 
@@ -24,12 +25,12 @@ html {
 
 /*Barra de rolagem*/
 *::-webkit-scrollbar {
-    width: 10px;
-    width: 10px;
+    width: 1rem;
+    width: 1rem;
 }
 
 *::-webkit-scrollbar-track {
-    border-radius: 6px;
+    border-radius: 0.6rem;
     background-color: #DFE9EB;
 }
   
@@ -42,7 +43,7 @@ html {
 }
   
 *::-webkit-scrollbar-thumb {
-    border-radius: 7px;
+    border-radius: 0.7rem;
     background-color: #FFCD37;
 }
   
@@ -80,6 +81,7 @@ li {
 
 .bg-titulo {
     background-color: #F5DF4E;
+    border-radius: 0.5rem;
 }
 
 .bg-white-titulo {
@@ -94,8 +96,8 @@ li {
     border: solid 0.8rem var(--black);
     border-radius: 50%;
     max-height: 25rem;
-    -webkit-box-shadow: 1px 6px 10px 0px rgba(0,0,0,0.46); 
-    box-shadow: 1px 6px 10px 0px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0.1rem 0.6rem 1rem 0rem rgba(0,0,0,0.46); 
+    box-shadow: 0.1rem 0.6rem 1rem 0rem rgba(0,0,0,0.46);
 }
 
 /*Button*/
@@ -139,7 +141,7 @@ li {
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 6rem;
     width: 100%;
     background-color: #303030;
     padding: 0 7%;
@@ -151,7 +153,7 @@ li {
     height: 100%;
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #e3e2e2;
 }
 
@@ -172,9 +174,9 @@ li {
 
 #navbar .links a {
     display: block;
-    padding: 1em;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 0.2rem;
+    margin: 0.8rem;
+    font-size: 1.6rem;
     color: #e3e2e2;
     text-decoration: none;
     position: relative;
@@ -190,7 +192,7 @@ li {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 0.2rem;
     background-color: #FAB228;
     visibility: hidden;
     transform: scaleX(0);
@@ -217,11 +219,11 @@ li {
 }
 
 #navbar .icon-burger .line {
-    width: 30px;
-    height: 5px;
+    width: 3rem;
+    height: 0.5rem;
     background-color: #e3e2e2;
-    margin: 5px;
-    border-radius: 3px;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
     transition: all 0.5s ease-in-out;
 }
 
@@ -238,7 +240,7 @@ li {
         z-index: 9999;
         left: 0;
         right: 0;
-        top: 60px;
+        top: 6rem;
         bottom: 100%;
         width: auto;
         height: auto;
@@ -266,11 +268,11 @@ li {
     }
 
     #navbar :checked ~ .icon-burger .line:nth-child(1) {
-        transform: translateY(10px) rotate(225deg);
+        transform: translateY(1rem) rotate(225deg);
     }
 
     #navbar :checked ~ .icon-burger .line:nth-child(3) {
-        transform: translateY(-10px) rotate(-225deg);
+        transform: translateY(-1rem) rotate(-225deg);
     }
 
     #navbar :checked ~ .icon-burger .line:nth-child(2) {
@@ -301,13 +303,7 @@ li {
     position: relative;
 }
 
-.activo {
-    border-bottom: 2px solid #FAB228;
-    color: #5a5a5a;
-    font-weight: 600;
-    padding-bottom: 0.4rem;
-    pointer-events: none;
-}
+
 
 #navContent .dinLinks a::before {
     content: "";
@@ -315,7 +311,7 @@ li {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 0.2rem;
     background-color: #FAB228;
     visibility: hidden;
     transform: scaleX(0);
@@ -350,11 +346,11 @@ accordion-collapse {
     resize: none;
     border: 0;
     transition: all 0.3s;
-    border-bottom:2px solid #d2cdbe
+    border-bottom:0.2rem solid #d2cdbe
 }
 
 #pop-form input:focus, select:focus {
-    border-bottom:2px solid #ffe604;
+    border-bottom:0.2rem solid #ffe604;
 }
 
 #pop-form label:before {
@@ -364,49 +360,50 @@ accordion-collapse {
 }
 
 /*Formulário contacto*/
+#form-contact {
+    box-shadow: 0.1rem 0.4rem 0.8rem #575757;
+}
 .form-control {
-    padding-bottom: 20px;
+    padding: 2rem;
     position: relative;
-    background-color: #0f172a41;
+    background-color: #ffe71000;
     color: var(--white);
-    border: solid 1px var(--dark-blue);
+    border: solid 0.1rem #fded03;
 }
 
 .form-control label {
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 .form-control input {
-    border: 2px solid var(--white);
+    border: 0.2rem solid var(--white);
     display: block;
-    border-radius: 10px;
-    font-size: 14px;
+    border-radius: 1rem;
+    font-size: 1.4rem;
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .form-control textarea {
-    border: 2px solid var(--white);
+    border: 0.2rem solid var(--white);
     display: block;
-    border-radius: 10px;
-    font-size: 14px;
+    border-radius: 1rem;
+    font-size: 1.4rem;
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .form-control i {
     position: absolute;
-    top: 35px;
-    right: 10px;
+    top: 3.5rem;
+    right: 1rem;
     visibility: hidden;
 }
 
 .form-control small {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     visibility: hidden;
+    font-size: 1.5rem;
 }
 
 .form-control span {
@@ -414,10 +411,10 @@ accordion-collapse {
 }
 
 .form button {
-    font-size: 18px;
+    font-size: 1.8rem;
     width: 100%;
-    border-radius: 10px;
-    margin: 20px 0;
+    border-radius: 1rem;
+    margin: 2rem 0;
 }
 
 .form-control.success input {
@@ -461,12 +458,7 @@ accordion-collapse {
     color: var(--alert-error);
 }
 
-
 .shape-leitor {
     background: rgba(255, 255, 255, 0) url(../image/blob.svg) no-repeat center;
-}
-
-.mfp-img {
-    width: 200rem;
 }
   

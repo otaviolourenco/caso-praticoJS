@@ -1,16 +1,16 @@
-const form = document.getElementById('form-contact');
-const nameimp = document.getElementById('nameimp');
-const email = document.getElementById('email');
-const msg = document.getElementById('msg');
+let form = document.getElementById('form-contact');
+let nameimp = document.getElementById('nameimp');
+let email = document.getElementById('email');
+let msg = document.getElementById('msg');
 
-//function to name validate
+//Função para validar nome
 nameimp.addEventListener('input', (e) => {
     e.preventDefault();
     checkNameImp();
 });
 
 function checkNameImp() {
-    const nameimpValue = nameimp.value;
+    let nameimpValue = nameimp.value;
 
     if (nameimpValue == '') {
         setErrorFor(nameimp, "Por favor, digite o seu nome!");
@@ -19,12 +19,13 @@ function checkNameImp() {
     } else {
         setSuccessFor(nameimp);
     }
-}
+}; 
+
 function checkName(nameimp) {
     return /^[A-Z][a-z]+(?:[ ][A-Z][a-z]+)*$/i.test(nameimp)
-}
+};
 
-//function para validar email
+//Função para validar e-mail
 email.addEventListener('input', (e) => {
     e.preventDefault();
     checkEmailImp();
@@ -46,7 +47,7 @@ function checkEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
-//function para validar textarea
+//Função para validar textarea
 msg.addEventListener('input', (e) => {
     e.preventDefault();
     checkMsgImp();
@@ -66,7 +67,6 @@ function checkMsgImp() {
 
 function checkMsg(msg) {
     return (form.msg.value.length >= 200);
-    console.log(checkMsg);
 }
 
 var textArea = document.querySelector('textarea');
