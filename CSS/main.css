@@ -321,7 +321,7 @@ li {
     color: #FAB228;
 }
 
-/*Accordion conteudo*/
+/*Accordion conteudo
 .accordion-body {
     background-color: var(--yellow);
 }
@@ -332,7 +332,7 @@ li {
 
 .accordion-collapse {
     background-color: var(--yellow);
-}
+}*/
 
 #origem {
     border: 0.1rem solid;
@@ -368,7 +368,7 @@ li {
     box-shadow: 0.1rem 0.4rem 0.8rem #575757;
 }
 .form-control {
-    padding: 2rem;
+    padding: 1.3rem;
     position: relative;
     background-color: #ffe71000;
     color: var(--white);
@@ -466,4 +466,19 @@ li {
 .shape-leitor {
     background: url(../image/blob.svg) no-repeat center;
 }
+
+.box-cv {
+    width: 35rem;
+    text-align: center;
+}
+
+.fa-icon {
+    font-size: 7.5rem;
+    color: var(--yellow);
+    padding-bottom: 2rem;
+}
+
+
+
+
   
