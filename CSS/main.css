@@ -478,6 +478,12 @@ li {
     padding-bottom: 2rem;
 }
 
+.progressbar {
+    background-color: var(--yellow);
+    color: var(--black);
+    font-size: 1.6rem;
+}
+
 
 
 
