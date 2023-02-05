@@ -4,22 +4,22 @@ function leitor() {
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         //para obter os dados do XML
-        var xmlDoc = this.responseXML;
-        var items = xmlDoc.getElementsByTagName("NOTICIA");
+        let xmlDoc = this.responseXML;
+        let items = xmlDoc.getElementsByTagName("NOTICIA");
   
         //para criar elementos HTML dinamicamente
-        for (var i = 0; i < items.length; i++) {
-          var titulo =
+        for (let i = 0; i < items.length; i++) {
+          let titulo =
             items[i].getElementsByTagName("TITULO")[0].childNodes[0].nodeValue;
-          var resumo =
+          let resumo =
             items[i].getElementsByTagName("RESUMO")[0].childNodes[0].nodeValue;
-          var ligacao =
+          let ligacao =
             items[i].getElementsByTagName("LIGACAO")[0].childNodes[0].nodeValue;
-          var li = document.createElement("li");
-          var h2 = document.createElement("h2");
-          var p = document.createElement("p");
-          var a = document.createElement("a");
-          var line = document.createElement("hr")
+          let li = document.createElement("li");
+          let h2 = document.createElement("h2");
+          let p = document.createElement("p");
+          let a = document.createElement("a");
+          let line = document.createElement("hr")
           h2.innerHTML = titulo;
           p.innerHTML = resumo;
           a.innerHTML = ligacao;

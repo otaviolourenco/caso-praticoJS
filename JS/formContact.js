@@ -113,3 +113,10 @@ function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = "form-control success";
 }
+
+function enviarContacto(event) {
+    event.preventDefault();
+    document.getElementById("form-contact").reset();
+
+    alert("Obrigado pela sua mensagem! Entrarei em contacto o mais breve possível.")
+}

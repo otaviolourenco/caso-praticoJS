@@ -52,5 +52,5 @@ function enviarDados(event) {
     event.preventDefault();
     document.getElementById("pop-form").reset();
 
-    alert("O seu pedido foi encaminhado. Entraremos em contacto o mais breve possível!")
+    alert("O seu pedido foi encaminhado. Entrarei em contacto o mais breve possível!")
 }

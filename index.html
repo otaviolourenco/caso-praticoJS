@@ -91,7 +91,7 @@
           
           <div id="dinContent">
             <div class="row reveal">
-                <div class="col-md-7 p-5 text-sm-center">
+                <div class="col-md-7 p-5">
                     <h2 class="title-h2 mb-5">Hey, me chamo Martin Doe,</h2>
                     <p class="pb-2">um designer multidisciplinar especializado em web design, design gráfico e design de interface/experiência do usuário. Eu sou capaz de transformar suas ideias em projetos incríveis e atraentes. Possuo experiência em diversas tecnologias e plataformas, incluindo HTML, CSS, JavaScript, PHP e WordPress. Me especializei em criar websites personalizados e responsivos que oferecem uma excelente experiência ao usuário. Além disso, também ofereço serviços de SEO e manutenção para garantir que seu site esteja sempre funcionando corretamente. Se você está procurando por um desenvolvedor web confiável e experiente, entre em contacto e saiba mais sobre como <strong>posso ajudar a elevar sua presença online.</strong>"</p>
                     <div id="social" class="pb-5">
@@ -296,10 +296,10 @@
                 <p class="text-center"><span class="bg-white-titulo px-3">Mensagem</span></p>
                 <h2 class="titulo-h2 text-center pb-5">Entre em contacto</h2>
 
-                <form name="form-contact" id="form-contact" class="form reveal">
+                <form method="post" name="form-contact" onsubmit="enviarContacto(event)" id="form-contact" class="form reveal">
                     <div class="form-control">
                         <label for="nameinp">Nome</label> 
-                        <input type="text" id="nameinp" placeholder="Digite o seu nome">
+                        <input type="text" id="nameinp" placeholder="Digite o seu nome" required>
                         <i class="fa-solid fa-circle-exclamation"></i>
                         <i class="fa-solid fa-circle-check"></i>
                         <small>Mensagem de erro</small>
@@ -307,7 +307,7 @@
           
                     <div class="form-control">
                         <label for="emailinp">Email</label> 
-                        <input type="text" id="emailinp" placeholder="Digite o seu email">
+                        <input type="text" id="emailinp" placeholder="Digite o seu email" required>
                         <i class="fa-solid fa-circle-exclamation"></i>
                         <i class="fa-solid fa-circle-check"></i>
                         <small>Mensagem de erro</small>
@@ -323,7 +323,7 @@
       
                     <div class="form-control">
                     <label for="msg">Mensagem</label> 
-                      <textarea name="msg" id="msg" cols="20" rows="5" placeholder="Digite a sua mensagem"></textarea>
+                      <textarea name="msg" id="msg" cols="20" rows="5" placeholder="Digite a sua mensagem" required></textarea>
                         <div>
                           <span id="counter">200</span><span>/200</span>
                         </div>
