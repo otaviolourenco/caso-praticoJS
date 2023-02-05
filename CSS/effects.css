@@ -139,8 +139,18 @@
     border-color: #ffff12;
 }
 
-
+/*Border das imagens*/
 .border-pic {
     border: solid 1rem #fff555;
     padding: 1.5rem;
+}
+
+/*pop-up galeria*/
+.mfp-img {
+    width: auto !important;
+}
+
+.mfp-close {
+    color: black !important;
+    cursor: default !important;
 }

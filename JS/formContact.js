@@ -1,28 +1,29 @@
 let form = document.getElementById('form-contact');
-let nameimp = document.getElementById('nameimp');
-let email = document.getElementById('email');
+let nameinp = document.getElementById('nameinp');
+let email = document.getElementById('emailinp');
+let mobile = document.getElementById('telinp');
 let msg = document.getElementById('msg');
 
 //Função para validar nome
-nameimp.addEventListener('input', (e) => {
+nameinp.addEventListener('input', (e) => {
     e.preventDefault();
-    checkNameImp();
+    checkNameInp();
 });
 
-function checkNameImp() {
-    let nameimpValue = nameimp.value;
+function checkNameInp() {
+    let nameinpValue = nameinp.value;
 
-    if (nameimpValue == '') {
-        setErrorFor(nameimp, "Por favor, digite o seu nome!");
-    } else if (!checkName(nameimpValue)) {
-        setErrorFor(nameimp, "Digite o seu nome e apelido.");
+    if (nameinpValue == '') {
+        setErrorFor(nameinp, "Por favor, digite o seu nome!");
+    } else if (!checkName(nameinpValue)) {
+        setErrorFor(nameinp, "Digite o seu nome e apelido.");
     } else {
-        setSuccessFor(nameimp);
+        setSuccessFor(nameinp);
     }
 }; 
 
-function checkName(nameimp) {
-    return /^[A-Z][a-z]+(?:[ ][A-Z][a-z]+)*$/i.test(nameimp)
+function checkName(nameinp) {
+    return /^[A-Z][a-z]{2,}(?:[ ][A-Z][a-z]+)*$/i.test(nameinp)
 };
 
 //Função para validar e-mail
@@ -47,6 +48,28 @@ function checkEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
+//Função para validar telefone
+telinp.addEventListener('input', (e) => {
+    e.preventDefault();
+    checkTelInp();
+});
+
+function checkTelInp() {
+    let telinpValue = telinp.value;
+
+    if (telinpValue == '') {
+        setErrorFor(telinp, "Por favor, digite o seu contacto!");
+    } else if (!checkTel(telinpValue)) {
+        setErrorFor(telinp, "Certifique-se de que o contacto tem nove dígitos!");
+    } else {
+        setSuccessFor(telinp);
+    }
+};
+
+function checkTel(telinp) {
+    return /^\d{9}$/.test(telinp)
+}
+
 //Função para validar textarea
 msg.addEventListener('input', (e) => {
     e.preventDefault();
@@ -65,14 +88,14 @@ function checkMsgImp() {
     } 
 }
 
-function checkMsg(msg) {
+function checkMsg() {
     return (form.msg.value.length >= 200);
 }
 
-var textArea = document.querySelector('textarea');
+let textArea = document.querySelector('textarea');
 textArea.addEventListener('input', function(){
-var caraterMin = Number(200);
-var digitando = textArea.value.length;
+let caraterMin = Number(200);
+let digitando = textArea.value.length;
     document.getElementById('counter').innerHTML = (caraterMin - digitando)
     console.log();
 });
@@ -82,14 +105,11 @@ var digitando = textArea.value.length;
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector("small");
-    // mensagem de erro 
     small.innerText = message;
-    // adicionar a classe do erro
     formControl.className = "form-control error";
 }
 
 function setSuccessFor(input) {
     const formControl = input.parentElement;
-    // adicionar a classe do sucesso
     formControl.className = "form-control success";
 }

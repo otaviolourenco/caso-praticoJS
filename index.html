@@ -50,7 +50,7 @@
                 <div class="col-sm">
                   <a href="#portifolio" class="my-white-btn mx-4 mb-5">Portifólio</a>
 
-                  <a href="#pop-form" class="popup-with-form my-btn btn-animation btn-animated mx-4">Pedir orçamento</a>
+                  <a href="#pop-form" class="popup-with-form my-btn btn-animated mx-4">Pedir orçamento</a>
                 </div>
 
             </div>
@@ -158,59 +158,59 @@
           </nav>
 
           <!--Galeria-->
-          <div class="popup-gallery d-flex flex-row flex-wrap justify-content-center">
+          <div class="d-flex flex-row flex-wrap justify-content-center">
 
             <div class="ecomm">
-              <a href="image/gallery/landing-page1.jpg">
-                <img src="image/gallery/landing-page1.jpg" class="p-3" alt="" height="450">
+              <a href="image/gallery/landing-page1.jpg" class="image-popup-vertical-fit">
+                <img src="image/gallery/landing-page1.jpg" class="p-3" alt="Web site E-commerce" height="450">
               </a>
             </div>
 
             <div class="landPg">
-              <a href="image/gallery/landing-page2.jpg">
+              <a href="image/gallery/landing-page2.jpg" class="image-popup-vertical-fit">
                 <img src="image/gallery/landing-page2.jpg" class="p-3" alt="" height="450">
               </a>
             </div>
 
             <div class="port">
-              <a href="image/gallery/landing-page3.jpg">
+              <a href="image/gallery/landing-page3.jpg" class="image-popup-vertical-fit">
                 <img src="image/gallery/landing-page3.jpg" class="p-3" alt="" height="450">
               </a>
             </div>
 
             <div class="ecomm">
-              <a href="image/gallery/landing-page4.jpg">
+              <a href="image/gallery/landing-page4.jpg" class="image-popup-vertical-fit">
                 <img src="image/gallery/landing-page4.jpg" class="p-3" alt="" height="450">
               </a>
             </div>
 
             <div class="port">
-              <a href="image/gallery/landing-page5.jpg">
+              <a href="image/gallery/landing-page5.jpg" class="image-popup-vertical-fit">
                 <img src="image/gallery/landing-page5.jpg" class="p-3" alt="" height="450">
               </a>
             </div>
 
             <div class="landPg">
-              <a href="image/gallery/landing-page6.jpg">
+              <a href="image/gallery/landing-page6.jpg" class="image-popup-vertical-fit">
                 <img src="image/gallery/landing-page6.jpg" class="p-3" alt="" height="450">
               </a>
             </div>
 
             <div class="ecomm">
-              <a href="image/gallery/landing-page7.jpg">
+              <a href="image/gallery/landing-page7.jpg" class="image-popup-vertical-fit">
                 <img src="image/gallery/landing-page7.jpg" class="p-3" alt="" height="450">
               </a>
             </div>
 
             <div class="landPg">
-              <a href="image/gallery/landing-page8.jpg">
+              <a href="image/gallery/landing-page8.jpg" class="image-popup-vertical-fit">
                 <img src="image/gallery/landing-page8.jpg" class="p-3" alt="" height="450">
               </a>
             </div>
 
             <div class="port">
-              <a href="image/gallery/landing-page9.jpg">
-                <img src="image/gallery/landing-page9.jpg" class="p-3" alt="" height="450">
+              <a href="image/gallery/landing-page9.jpg" class="image-popup-vertical-fit">
+                <img src="image/gallery/landing-page9.jpg" class="p-3" alt="" height="450" >
               </a>
             </div>
           </div>
@@ -223,11 +223,11 @@
     <div class="container-fluid full-window">
         <div id="contacto" class="py-5"></div>
         <div class="row reveal">
-            <div class="col-md-7 p-5 text-center">
+            <div class="col-md-7 p-5 text-center ">
                 <p><span class="bg-white-titulo px-3">FAQ</span></p>
                 <h2 class="titulo-h2 pb-5">Perguntas frequentes</h2>
 
-                <div class="accordion reveal" id="accordionExample">
+                <div class="accordion shadow-accordion reveal" id="accordionExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button style="font-size: 2rem;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -274,9 +274,9 @@
                         </button>
                       </h2>
                       <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="collapseFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body p-5">
+                        <div class="accordion-body p-3">
                           Digite o local: <input id="origem" type="text" value="">
-                          <input class="my-btn mb-3 py-3" type="button" value="Procurar" onclick="calcularRota()">
+                          <input class="my-btn mb-3 py-3" type="button" value="Procurar" onclick="calcularRota()"> <br>
                           Ou use a sua <input class="my-btn mb-4 p-3" type="button" id="localizar" value="Localização atual"><br>
                           <div id="mapa" style="position: relative; width: 100%; height: 30rem;"></div>
                         </div>
@@ -291,20 +291,28 @@
 
                 <form name="form-contact" id="form-contact" class="form reveal">
                     <div class="form-control">
-                        <label for="nameimp">Nome</label> 
-                        <input type="text" id="nameimp" placeholder="Digite o seu nome">
+                        <label for="nameinp">Nome</label> 
+                        <input type="text" id="nameinp" placeholder="Digite o seu nome">
                         <i class="fa-solid fa-circle-exclamation"></i>
                         <i class="fa-solid fa-circle-check"></i>
                         <small>Mensagem de erro</small>
                     </div>
           
                     <div class="form-control">
-                        <label for="email">Email</label> 
-                        <input type="text" id="email" placeholder="Digite o seu email">
+                        <label for="emailinp">Email</label> 
+                        <input type="text" id="emailinp" placeholder="Digite o seu email">
                         <i class="fa-solid fa-circle-exclamation"></i>
                         <i class="fa-solid fa-circle-check"></i>
                         <small>Mensagem de erro</small>
                     </div>
+
+                    <div class="form-control">
+                      <label for="telinp">Contacto</label> 
+                      <input type="tel" id="telinp" placeholder="999-999-999" required>
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <small>Mensagem de erro</small>
+                  </div>
       
                     <div class="form-control">
                     <label for="msg">Mensagem</label> 

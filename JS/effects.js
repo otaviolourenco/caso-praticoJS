@@ -9,21 +9,12 @@ $(document).ready(function(){
     });
 
     //Galeria do portifolio
-    $('.popup-gallery').magnificPopup({
-		delegate: 'a',
+    $('.image-popup-vertical-fit').magnificPopup({
 		type: 'image',
-		tLoading: 'Loading image #%curr%...',
+		closeOnContentClick: true,
 		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1]
-		},
 		image: {
-			tError: '<a href="%url%">A imagem #%curr%</a> não pôde ser carregada.',
-			titleSrc: function(item) {
-				return item.el.attr('title') + ' <small>Por Otávio Lourenço</small>';
-			}
+			verticalFit: true
 		}
 	});
 
@@ -70,4 +61,3 @@ function reveal() {
     });
 }
 window.addEventListener("scroll", reveal);
-
