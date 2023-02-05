@@ -1,6 +1,7 @@
 :root {
     --black: #212529;
     --yellow: #F5DF4E;
+    --yellow-bg: #FFF111;
     --white: #F8F9FA;
     --light-green:  #7EFDC0;
     --alert-ok: #06be65;
@@ -32,7 +33,7 @@ html {
 
 *::-webkit-scrollbar-track {
     border-radius: 0.6rem;
-    background-color: #F8F9FA;
+    background-color: #dbdcdd;
 }
   
 *::-webkit-scrollbar-track:hover {
@@ -329,9 +330,9 @@ li {
 }
 
 .accordion-button {
-    background-color: #f3d302 !important;
+    background-color: var(--yellow-bg) !important;
     color: var(--black) !important;
-    border: 0.1rem solid #808080 ;
+    border: solid 0.1rem var(--yellow);
 }
 
 .shadow-accordion {
@@ -375,7 +376,7 @@ li {
 .form-control {
     padding: 1.3rem;
     position: relative;
-    background-color: #ffe71000;
+    background-color: var(--yellow-bg);
     color: var(--white);
     border: solid 0.1rem var(--yellow);
 }
@@ -487,6 +488,17 @@ li {
     background-color: var(--yellow);
     color: var(--black);
     font-size: 1.6rem;
+}
+
+#social i {
+    color: var(--black);
+    font-size: 2.9rem;
+    margin: 0 0.5rem;
+}
+
+#social i:hover {
+    color: var(--yellow);
+    filter: drop-shadow(0.2rem 0.4rem 0.3rem var(--black));
 }
 
 

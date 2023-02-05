@@ -1,5 +1,15 @@
 <FEED>
     <NOTICIA>
+        <TITULO>Quais foram as linguagens de programação mais usadas em 2022?</TITULO>
+        <RESUMO>O JavaScript manteve o posto de linguagem de programação mais utilizada no mundo pelo oitavo ano consecutivo, de acordo com o relatório Octoverse 2022 elaborado pela...</RESUMO>
+        <LIGACAO>https://www.tecmundo.com.br/mercado/260143-linguagens-programacao-usadas-2022.htm</LIGACAO>
+    </NOTICIA>
+    <NOTICIA>
+        <TITULO>15 comandos no GIT que os desenvolvedores precisam saber</TITULO>
+        <RESUMO>Dominar os comandos GIT é uma habilidade que se conquista com o tempo. Os mais de 3 milhões de usuários do GitHub podem atestar isso. No entanto, você pode otimizar...</RESUMO>
+        <LIGACAO>https://www.tecmundo.com.br/software/259555-15-comandos-git-desenvolvedores-precisam-saber.htm</LIGACAO>
+    </NOTICIA>
+    <NOTICIA>
         <TITULO>Raspberry Pi 5 só chegará depois de 2023</TITULO>
         <RESUMO>Falta pouco para a chegada de 2023, mas muito para a do Raspberry Pi 5. O mini-computador só será lançado depois do ano que vem. Por outro lado...</RESUMO>
         <LIGACAO>https://www.tecmundo.com.br/produto/257304-raspberry-pi-5-so-chegara-2023.htm</LIGACAO>

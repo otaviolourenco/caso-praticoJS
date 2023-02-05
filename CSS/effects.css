@@ -1,6 +1,6 @@
 /*Efeito botão animado*/
 .btn-animated {		
-    animation: bounce-top 2.2s ease-out 0s infinite normal none
+    animation: bounce-top 2.2s ease-out 0s infinite normal none;
 }
 
 @keyframes bounce-top {
