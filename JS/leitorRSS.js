@@ -3,11 +3,9 @@ function leitor() {
   
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
-        //para obter os dados do XML
         let xmlDoc = this.responseXML;
         let items = xmlDoc.getElementsByTagName("NOTICIA");
   
-        //para criar elementos HTML dinamicamente
         for (let i = 0; i < items.length; i++) {
           let titulo =
             items[i].getElementsByTagName("TITULO")[0].childNodes[0].nodeValue;
