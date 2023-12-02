@@ -35,9 +35,5 @@ function leitor() {
     xhttp.open("GET", "dados.xml", true);
     xhttp.send();
 
-    window.addEventListener("load", leitor);
-    setTimeout(function() {
-      alert("Bem-vindo ao Portifólio do Martin Doe!");
-    }, 5000);
   }
   
